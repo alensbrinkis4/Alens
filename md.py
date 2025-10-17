@@ -3,7 +3,7 @@ import json
 import google.generativeai as genai
 from pathlib import Path
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "mana api atslega")
 genai.configure(api_key=GEMINI_API_KEY)
 
 def read_file(filepath):
@@ -242,4 +242,5 @@ def main():
     print("\n✅ Visi CV apstrādāti! Rezultāti atrodami 'outputs/' direktorijā.")
 
 if __name__ == "__main__":
+
     main()
